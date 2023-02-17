@@ -1,5 +1,7 @@
 import React from "react";
+import { SidebarItems } from "./SidebarItems";
 import "./style.css";
+import { listItem } from "./itemList";
 
 export const Sidebar = () => {
   return (
@@ -7,22 +9,26 @@ export const Sidebar = () => {
       <div className="navigation__search">
         <input type="search" placeholder="Search"></input>
       </div>
-      <hr />
-      <div>
-        <a href="/">Home</a>
-        <a href="/messages">
-          <div>Messages</div>
-        </a>
-        <a href="/projects">Projects</a>
+
+      <div className="siderbar__routes">
+        <hr />
+        <SidebarItems routes={listItem} />
       </div>
-      <hr />
-      <div>
-        <a href="/notifications">
-          <div>Notificatons</div>
-        </a>
-        <a href="/settings">
-          <div>Settings</div>
-        </a>
+
+      <div className="siderbar__footer">
+        <hr />
+        <SidebarItems
+          routes={[
+            {
+              name: "Notifications",
+              route: "/notifications",
+            },
+            {
+              name: "Settings",
+              route: "/settings",
+            },
+          ]}
+        />
         <div>
           <img></img>
           <span>User 1</span>

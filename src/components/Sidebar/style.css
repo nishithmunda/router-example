@@ -10,17 +10,36 @@
     0px 2.76726px 2.21381px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
   padding: 24px 13px;
+  display: flex;
+  flex-direction: column;
 }
 .navigation__search {
-  display: flex; 
-  align-items: stretch; 
+  display: flex;
+  align-items: stretch;
   height: 42px;
   background: #f6f8fa;
   border-radius: 5px;
   padding: 10px 15px;
 }
+.siderbar__routes {
+  flex-grow: 1;
+}
+.siderbar__footer{
 
-.navigation__search > input{
+}
+.navigation__search > input {
   border: none;
   background: none;
+}
+
+.sidebar__item {
+  display: flex;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.navlink {
+  flex-grow: 1;
+  text-decoration: none;
+  color: #8d91a0;
 }

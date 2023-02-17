@@ -10,3 +10,14 @@
 .App {
   display: flex;
 }
+
+.view__section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.text{
+  color: #FCFCFC; 
+}
