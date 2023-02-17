@@ -1,7 +1,7 @@
 import React from "react";
 import { SidebarItems } from "./SidebarItems";
 import "./style.css";
-import { listItem } from "./itemList";
+import { listItem, listItemfooter } from "./itemList";
 
 export const Sidebar = () => {
   return (
@@ -16,22 +16,9 @@ export const Sidebar = () => {
       </div>
 
       <div className="siderbar__footer">
-        <hr />
-        <SidebarItems
-          routes={[
-            {
-              name: "Notifications",
-              route: "/notifications",
-            },
-            {
-              name: "Settings",
-              route: "/settings",
-            },
-          ]}
-        />
-        <div>
-          <img></img>
-          <span>User 1</span>
+        <div className="siderbar__routes">
+          <hr />
+          <SidebarItems routes={listItemfooter} />
         </div>
       </div>
     </aside>

@@ -45,13 +45,19 @@ function App() {
 export default App;
 
 function Home() {
-  const state = useRouterState();
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems:'center',
+        justifyContent: "center",
+      }}
+    >
       <h1 className="text">HOME</h1>
-      <button onClick={() => navigate("/settings")}>Navigate</button>
+      <button onClick={() => navigate("/settings")}>Navigate-to-Setting</button>
     </div>
   );
 }

@@ -20,9 +20,13 @@
   background: #f6f8fa;
   border-radius: 5px;
   padding: 10px 15px;
+  margin-bottom: 20px;
 }
 .siderbar__routes {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .siderbar__footer{
 
@@ -42,4 +46,7 @@
   flex-grow: 1;
   text-decoration: none;
   color: #8d91a0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }

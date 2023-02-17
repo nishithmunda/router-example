@@ -1,15 +1,26 @@
+import { Home } from "../../assets/Home";
+import { Goals } from "../../assets/Goals";
+import { Message } from "../../assets/Message";
+import { Notifications } from "../../assets/Notifications";
+import { Projects } from "../../assets/Projects";
+import { Progress } from "../../assets/Progress";
+import { Settings } from "../../assets/Settings";
+
 export const listItem = [
   {
     name: "Home",
     route: "/",
+    icon: Home,
   },
   {
     name: "Message",
     route: "/messages",
+    icon: Message,
   },
   {
     name: "Projects",
     nested: true,
+    icon: Projects,
     route: [
       {
         name: "Project 1",
@@ -24,9 +35,24 @@ export const listItem = [
   {
     name: "Progress",
     route: "/progress",
+    icon: Progress,
   },
   {
     name: "Goals",
     route: "/goals",
+    icon: Goals,
+  },
+];
+
+export const listItemfooter = [
+  {
+    name: "Notifications",
+    route: "/notifications",
+    icon: Notifications,
+  },
+  {
+    name: "Settings",
+    route: "/settings",
+    icon: Settings,
   },
 ];
