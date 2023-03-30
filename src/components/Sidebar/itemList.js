@@ -24,7 +24,14 @@ export const listItem = [
     route: [
       {
         name: "Project 1",
-        route: "/project-1",
+        route: [{
+          name: "Sub Project 1",
+          route: "/subProject"
+        },
+               {
+          name: "Sub Project 2",
+          route: "/subProject2"
+        }],
       },
       {
         name: "Project 2",
